@@ -1,0 +1,111 @@
+:root {
+    --font1: "Karla", sans-serif;
+    --font2: "Inconsolata", monospace;
+  }
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.contact-intro h3 {
+    font-family: var(--font1);
+    font-size: 2rem;
+}
+.contact-intro p {
+    font-family: var(--font2);
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.links {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.socials {
+    h3 {
+        font-size: 1.5rem;
+        color: gray;
+        margin: 1rem 0;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+}
+
+.email {
+    margin-top: 2.5rem;
+    h3 {
+        font-size: 1.5rem;
+        color: gray;
+        margin: 1rem 0;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+}
+
+.location {
+    margin-top: 2.5rem;
+    h3 {
+        font-size: 1.5rem;
+        color: gray;
+        margin: 1rem 0;
+    }
+    p {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1280px) {
+    
+.links {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.socials {
+    grid-column: 1 / span 4;
+    h3 {
+        font-size: 1.5rem;
+        color: gray;
+        margin: 1rem 0;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+}
+
+.email {
+    grid-column: 5 / span 4;
+    margin-top: 0rem;
+    h3 {
+        font-size: 1.5rem;
+        color: gray;
+        margin: 1rem 0;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+}
+
+.location {
+    grid-column: 9 / span 4;
+    margin-top: 0rem;
+    h3 {
+        font-size: 1.5rem;
+        color: gray;
+        margin: 1rem 0;
+    }
+    p {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+}

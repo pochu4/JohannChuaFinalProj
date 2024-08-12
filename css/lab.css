@@ -1,0 +1,181 @@
+:root {
+  --font1: "Karla", sans-serif;
+  --font2: "Inconsolata", monospace;
+}
+.button-group {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+  /* MAOSNRY */
+  .masonry-block {
+    flex-grow: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    max-width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.msnry-grid-sizer,
+.msnry-grid-item {
+    width: 100%;
+}
+
+.msnry-grid-item {
+    margin-bottom: 1.25rem;
+}
+
+/* Each column should have a 4% gap */
+.msnry-gutter-sizer {
+    width: 0%;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font2);
+  font-weight: 200;
+  margin: 1rem 0;
+  h3 {
+    padding-right: 1rem;
+    font-weight: 200;
+  }
+  a {
+    padding-left: 1rem; 
+    font-size: 1rem;
+  }
+}
+
+.button-group {
+  margin-top: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group button {
+  box-shadow: none;
+	background-color:transparent;
+	border:1px solid #8f8f8f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	text-decoration:none;
+  font-family: var(--font2);
+  font-size: 0.75rem;
+  margin: 0 0.25rem;
+  padding: 0.25rem;
+}
+
+
+
+
+  
+  /* TABLET */
+  @media (min-width: 834px) {
+    .msnry-grid-sizer,
+    .msnry-grid-item {
+        width: 49%;
+    }
+
+    .msnry-grid-item {
+        margin-bottom: 2%;
+    }
+
+    /* Each column should have a 4% gap */
+    .msnry-gutter-sizer {
+        width: 2%;
+    }
+    .button-group {
+      justify-content: end;
+      margin-right: 3rem;
+    }
+    
+    .button-group button {
+      border: 0.1rem solid #8f8f8f;
+      font-family: var(--font2);
+      font-size: 1rem;
+      margin: 0 0.5rem;
+      padding: 0.5rem;
+    }
+    
+  }
+  
+  /* DESKTOP */
+  
+  @media (min-width: 1280px) {
+    .site-header__menu {
+      height: auto !important;
+      position: static;
+      width: auto;
+      top: unset;
+      left: unset;
+      padding: unset;
+    }
+  
+    .site-header__menu ul {
+      border-radius: unset;
+      background-color: unset;
+      display: flex;
+      gap: 1rem;
+    }
+  
+    .site-header__menu a {
+      display: inline-block;
+      border-bottom: unset;
+      padding: unset;
+      color: white;
+    }
+    .site-header__menu-icon {
+      display: none;
+    }
+      .msnry-grid-sizer,
+      .msnry-grid-item {
+          width: 24.25%;
+      }
+  
+      .msnry-grid-item {
+          margin-bottom: 1%;
+      }
+      .msnry-gutter-sizer {
+          width: 1%;
+      }
+      .footer2 {
+        h3 {
+          padding-right: 10rem;
+       }
+        a{
+          padding-left: 10rem;
+          font-size: 1.25rem;
+        }
+      }
+  }
+  
+  @media (max-width: 414px) {
+    .container {
+      padding: 1em;
+    }
+  
+    .footer {
+      padding: 2em 1em;
+      font-size: 0.875rem;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      top: 60px;
+    }
+  
+    .header-revealer:after {
+      top: 60px;
+      width: 110%;
+      height: 110%;
+    }
+  }
+  
